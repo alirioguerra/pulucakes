@@ -1,0 +1,486 @@
+
+/*
+Theme Name: Pulu cakes
+Theme URI: http://pilucakes.com.br
+Author: Alírio Guerra
+Author URI: http://acervopro.com.br
+Description: Tema criado para a marca pulu cakes
+Version: 1.0
+*/
+
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, li, a {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: 'Comfortaa', sans-serif;
+	color: #222222;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input {
+	padding: 0;
+	border-width: 0;
+}
+
+input:focus, textarea:focus, select:focus {
+	outline-offset: 0px;
+	opacity: .9;
+}
+:focus {
+	outline: -webkit-focus-ring-color auto 0px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*titulo*/
+
+.titulo {
+	padding-top: 50px;
+	color: #000;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.titulo::after {
+	content: '';
+	width: 200px;
+	height: 6px;
+	border-radius: 4px;
+	background: #f04e7f;
+	display: block;
+	margin: 5px auto;
+}
+
+/*btn*/
+
+.btn {
+	font-size: 1em;
+	color: #fff;
+	padding: 10px 20px;
+	background: #f04e7f;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+
+.btn:hover {
+	background: #0fb180;
+	transition: .4s;
+
+}
+
+.btn-invert {
+	font-size: 1em;
+	background: #fff;
+	color: #0fb180;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-align: center;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+.btn-invert:hover {
+	background: #f04e7f;
+	color: #fff;
+	border-radius: 9px;
+	padding: 10px 20px;
+	transition: .4s;
+}
+
+/*superhead*/
+
+.superhead-bg {
+	background: #0fb180;
+	color: #fff;
+}
+
+.superhead {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 5px;
+	align-items: flex-end;
+}
+
+.superhead a {
+	color: #fff;
+	margin-left: 5px;
+}
+
+.superhead a:hover {
+	color: #f04e7f;
+	transition: .4s;
+}
+
+.icone {
+	padding: 5px;
+	width: 36px;
+	text-align: center;
+}
+
+
+/*menu*/
+
+.menu-bg {
+	background: #fff;
+	box-shadow: 1px 1px 2px #cdcdcd;
+	padding: 10px 0px;
+}
+
+.menu-bg.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+
+img.logo-primary {
+	width: 80px;
+}
+
+.logo-primary.hide {
+	display: none;
+}
+
+.logo-stick {
+	color: #f04e7f;
+	padding: 5px;
+	font-size: 1.875em;
+	font-weight: 700;
+	display: none;
+}
+
+.logo-stick.show {
+	display: flex;
+}
+
+.menu {
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-nav ul li a {
+	color: #000;
+	font-size: 1em;
+	padding: 15px;
+}
+
+.menu-nav a:hover {
+	transition: .3s;
+	color: #f04e7f;
+}
+
+.active {
+	color: #f04e7f;
+}
+
+
+/*introducao*/
+
+.intro-conteudo {
+	text-align: center;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.intro-conteudo h1 {
+	color: #fff;
+	font-size: 2.5em;
+	padding-bottom: 20px;
+	text-shadow: 1px 1px 10px #474747;
+}
+
+.intro-conteudo h1::after {
+    	content: '';
+	width: 200px;
+	height: 6px;
+	border-radius: 4px;
+	background: #fff;
+	display: block;
+	margin: 5px auto 20px auto;
+	box-shadow: 1px 1px 10px #474747;
+}
+
+/*sobre*/
+.sobre-bg {
+	margin: 0 auto;
+}
+
+.profile-foto {
+	padding-top: 50px;
+}
+.profile {
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.paragrafo {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 20px 10px 50px 10px;
+	font-size: 1em;
+	color: #0fb180;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+/*fotos*/
+.fotos-bg {
+	background: #f0f0f0;
+	padding-bottom: 50px;
+}
+
+.fotos-container {
+	max-width: 960px;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
+.fotos-item {
+	margin: 10px;
+}
+
+.fotos-item img {
+	border-radius: 12px;
+}
+
+.fotos-item:hover {
+	opacity: .8;
+}
+
+/*preços*/
+
+.preco-content {
+	max-width: 960px;
+	margin: 0px auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.preco-item {
+	flex: 1;
+	margin: 10px;
+	padding: 20px;
+	background: #f04e7f;
+	border-radius: 12px;
+}
+
+.preco-item h2 {
+	font-size: 2.5em;
+	color: #fbe3a3;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.preco-item ul {
+	font-size: 1em;
+	color: #fbe3a3;
+}
+
+.preco-item li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.preco-item li::after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 8px;
+	background: #fbe3a3;
+	border-radius: 50%;
+}
+
+.preco-item p {
+	text-align: center;
+	color: #fbe3a3;
+	font-size: .8rem;
+}
+
+.preco-item sup {
+	font-size: 1rem;
+}
+
+.preco-item span {
+	color: #000;
+	display: block;
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: bold;
+}
+
+.preco-item span::after, .preco-item span::before {
+	content: '';
+	width: 200px;
+	margin: 5px auto;
+	height: 5px;
+	background: #fbe3a3;
+	border-radius: 2px;
+	display: block;
+}
+
+/*contato*/
+.contato {
+	background: #f0f0f0;
+	padding-bottom: 50px;
+}
+
+.contato-form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 50px;
+
+}
+
+.contato-form input {
+	background: #f04e7f;
+	color: #fff;
+	border-radius: 10px;
+	font-size: 1em;
+	padding: 10px;
+}
+
+.contato-form textarea {
+	padding: 10px;
+	background: #f04e7f;
+	color: #fff;
+	border-radius: 12px;
+	font-size: 1em;
+}
+
+.contato-form input::-webkit-input-placeholder,
+.contato-form textarea::-webkit-input-placeholder {
+	color: #fff;
+	font-family: 'Comfortaa', sans-serif;
+}
+
+/*superfooter*/
+.superfooter-bg {
+	background: #0fb180;
+	margin: 0 auto;
+}
+
+.superfooter {
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.superfooter input {
+	background: #fff;
+	width: 250px;
+	border-radius: 9px;
+	color: #0fb180;
+	font-size: .9em;
+	text-align: center;
+}
+
+
+.superfooter input::-webkit-input-placeholder{
+	color: #0fb180;
+	font-family: 'Comfortaa', sans-serif;
+	text-align: center;
+}
+
+
+/*footer*/
+footer {
+	background: #f04e7f;
+	margin: 0 auto;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+
+}
+
+footer p {
+	color: #fff;
+	font-size: .75em;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+
+/*responsive breakpoints*/
+
+@media only screen and (max-width: 565px) {
+	.superhead p {
+		display: none;
+	}
+	.menu {
+		justify-content: center;
+		padding: 5px;
+	}
+	.menu-nav ul li a {
+		margin: 5px;
+		width: 60px;
+		padding: 5px 0;
+	}
+	.fotos-item {
+		margin: 5px;
+	}
+
+	.logo-stick {
+		color: #f04e7f;
+		padding: 10px;
+		margin-bottom: 10px;
+		font-size: 1.875em;
+		font-weight: 700;
+		display: none;
+	}
+
+
+}	
+
+@media only screen and (max-width: 320px) {
+
+	.superfooter {
+		max-width: 960px;
+		padding: 5px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+
+
+}
+
+
